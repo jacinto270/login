@@ -1,0 +1,70 @@
+*{
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(127, 237, 230);
+    color: rgb(5, 44, 175);
+   padding: 1rem;
+   align-content: center;
+   justify-content: center;
+   text-align: center;
+
+
+}
+
+/* tarjeta cuadrada que contiene el formulario */
+.container{
+    background-color: white;
+    width: 320px;
+    margin: 0 auto;            /* la centra horizontalmente */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.container h1{
+    margin-bottom: 1rem;
+}
+
+/* elementos del formulario uno debajo de otro, como una lista */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: left;
+}
+
+form input[type="text"],
+form input[type="password"]{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+
+.boton{
+    background-color: rgb(13, 161, 174);
+    color: white;              /* color del texto */
+    border: none;              /* quita el borde gris por defecto */
+    border-radius: 20px;
+    padding: 10px 25px;        /* tamaño interno */
+    font-size: 1rem;
+    cursor: pointer;           /* muestra la manita al pasar el ratón */
+    transition: background-color 0.3s;
+}
+
+.boton:hover{
+    background-color: rgb(2, 115, 98);   /* cambia de color al pasar el ratón */
+}
+
+.boton:active{
+    transform: scale(0.97);       /* efecto de "presionado" */
+}
+h1{
+    box-shadow: rgba(70, 159, 208, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(65, 46, 240, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(46, 88, 240, 0.05) -25px 25px;
+
+}
